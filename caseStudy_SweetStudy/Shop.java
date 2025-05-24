@@ -15,11 +15,30 @@ public class Shop {
         productList.add(new Products("Cheesecake", 90.0, 30, "1122333"));
         productList.add(new Products("Cupcake", 5.0, 10, "4123323"));
         productList.add(new Products ("Eggtart", 15.0, 20, "2382382"));
+      
+ 
+       
+
         
         boolean isOpen = true;
         while(isOpen) {
-        	Thread.sleep(2000);
-            System.out.println("\n~~~SWEET SPOT BAKERY~~~\n");
+        	        try {
+            System.out.println();
+            System.out.println("███████╗██╗    ██╗███████╗███████╗████████╗    ███████╗██████╗  ██████╗ ████████╗    ██████╗  █████╗ ██╗  ██╗███████╗██████╗ ██╗   ██╗");
+            Thread.sleep(300);
+            System.out.println("██╔════╝██║    ██║██╔════╝██╔════╝╚══██╔══╝    ██╔════╝██╔══██╗██╔═══██╗╚══██╔══╝    ██╔══██╗██╔══██╗██║ ██╔╝██╔════╝██╔══██╗╚██╗ ██╔╝");
+            Thread.sleep(300);
+            System.out.println("███████╗██║ █╗ ██║█████╗  █████╗     ██║       ███████╗██████╔╝██║   ██║   ██║       ██████╔╝███████║█████╔╝ █████╗  ██████╔╝ ╚████╔╝ ");
+            Thread.sleep(300);
+            System.out.println("╚════██║██║███╗██║██╔══╝  ██╔══╝     ██║       ╚════██║██╔═══╝ ██║   ██║   ██║       ██╔══██╗██╔══██║██╔═██╗ ██╔══╝  ██╔══██╗  ╚██╔╝  ");
+            Thread.sleep(300);
+            System.out.println("███████║╚███╔███╔╝███████╗███████╗   ██║       ███████║██║     ╚██████╔╝   ██║       ██████╔╝██║  ██║██║  ██╗███████╗██║  ██║   ██║   ");
+            Thread.sleep(300);
+            System.out.println("╚══════╝ ╚══╝╚══╝ ╚══════╝╚══════╝   ╚═╝       ╚══════╝╚═╝      ╚═════╝    ╚═╝       ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝");
+        } catch (InterruptedException e) {
+            System.err.println("animation interrupted: " + e.getMessage());
+        }
+            System.out.println("\nWelcome to Sweet Spot Bakery!");
             Thread.sleep(1000);
             System.out.println("Please choose an option:");
             System.out.println("1. View Menu");

@@ -14,8 +14,6 @@ public class Carts {
     }
     
     public void addToCart(Products product, int quantity) {
-        // No need to check stock here anymore since we've already updated it in Shop.java
-        
         if (items.containsKey(product)) {
             // If product already exists in cart, increase quantity
             items.put(product, items.get(product) + quantity);
